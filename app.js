@@ -17,8 +17,8 @@ app.use("/sist_embarcados", sist_embarcadosRouter);
 const PWRouter = require("./routes/PW");
 app.use("/PW", PWRouter);
 
-const cad_usuárioRouter = require("./routes/cad_usuário");
-app.use("/cad_usuário", cad_usuárioRouter);
+const cad_usuarioRouter = require("./routes/cad_usuario");
+app.use("/cad_usuário", cad_usuarioRouter);
 
 const integrantesRouter = require("./routes/integrantes");
 app.use("/integrantes", integrantesRouter);

@@ -4,21 +4,21 @@ const router = express.Router();
 router.get("/add", async (req, res)=> {
     res.render("base", {
         title: "Adicionar Usuário",
-        view: "cad_usuário/add",
+        view: "cad_usuario/add",
     })
 });
 
 router.get("/edit", async (req, res)=> {
     res.render("base", {
         title: "Editar Usuário",
-        view: "cad_usuário/edit",
+        view: "cad_usuario/edit",
     })
 });
 
 router.get("/", async (req, res)=> {
     res.render("base", {
         title: "Listar Usuário",
-        view: "cad_usuário/show",
+        view: "cad_usuario/show",
     })
 });
 
