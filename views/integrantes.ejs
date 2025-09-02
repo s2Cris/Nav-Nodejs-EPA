@@ -1,1 +1,101 @@
-<h1>EPA</h1>
+<main>
+  <h1>EPA</h1>
+  <h2>Integrantes</h2>
+  <div class="circle-row">
+    <div class="integrante">
+      <img src="/img/cris.jpeg" alt="Integrante 1">
+      <div class="nome">Cristian Marcheti</div>
+    </div>
+    <div class="integrante">
+      <img src="/img/malu.jpeg" alt="Integrante 2">
+      <div class="nome">Maria Luiza Bonato</div>
+    </div>
+    <div class="integrante">
+      <img src="/img/mavi.jpeg" alt="Integrante 3">
+      <div class="nome">Maria Vitória Aparecida</div>
+    </div>
+  </div>
+</main>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fa;
+  }
+  main {
+    max-width: 900px;
+    margin: 2vw auto;
+    padding: 4vw 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    color: #2a5d84;
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    text-align: center;
+  }
+  h2 {
+    color: #3a7ca5;
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-weight: 500;
+  }
+  .circle-row {
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+    margin-bottom: 2em;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .integrante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18vw;
+    max-width: 160px;
+    min-width: 80px;
+  }
+  .integrante img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    object-fit: cover;
+    background: #fff;
+    border: 4px solid #e0e7ef;
+  }
+  .nome {
+    margin-top: 0.8em;
+    font-size: 1.1em;
+    color: #2a5d84;
+    text-align: center;
+    font-weight: 500;
+    background: #f8fafc;
+    padding: 0.4em 0.8em;
+    border-radius: 0.5em;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    width: 90%;
+  }
+  @media (max-width: 600px) {
+    main {
+      padding: 6vw 2vw;
+    }
+    .circle-row {
+      gap: 6vw;
+    }
+    .integrante {
+      width: 40vw;
+      max-width: 90vw;
+      min-width: 80px;
+    }
+    .nome {
+      font-size: 1em;
+      padding: 0.3em 0.5em;
+    }
+  }
+</style>
