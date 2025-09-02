@@ -18,7 +18,7 @@ const PWRouter = require("./routes/PW");
 app.use("/PW", PWRouter);
 
 const cad_usuarioRouter = require("./routes/cad_usuario");
-app.use("/cad_usuário", cad_usuarioRouter);
+app.use("/cad_usuario", cad_usuarioRouter);
 
 const integrantesRouter = require("./routes/integrantes");
 app.use("/integrantes", integrantesRouter);
